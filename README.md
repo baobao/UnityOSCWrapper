@@ -8,4 +8,4 @@ UnityOSCWrapper is a wrapper for [UnityOSC](https://github.com/jorgegarcia/Unity
 
 ## License
 
-See LICENSE.md (MIT).
+See [LICENSE.md](https://github.com/baobao/UnityOSCWrapper/blob/master/Assets/UnityOSCWrapper/LICENSE.md) (MIT).
