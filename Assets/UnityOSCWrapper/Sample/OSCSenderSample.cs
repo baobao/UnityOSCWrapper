@@ -10,7 +10,7 @@ public class OSCSenderSample : MonoBehaviour
     OSCSender m_sender; 
     public Slider slider;
 
-	void Start () 
+    void Start () 
     {
         m_sender = new OSCSender ();
         // 適宜IPアドレスを調整してください
@@ -20,6 +20,5 @@ public class OSCSenderSample : MonoBehaviour
         var e = new Slider.SliderEvent ();
         e.AddListener (x => m_sender.Send ("/changeValue", x));
         slider.onValueChanged = e;
-	}
-
+    }
 }
