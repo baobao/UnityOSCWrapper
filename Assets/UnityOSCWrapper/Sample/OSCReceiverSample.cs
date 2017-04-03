@@ -10,14 +10,14 @@ public class OSCReceiverSample : MonoBehaviour
     public Noise3 noise;
     public Text receiverIpTxt;
 
-	void Start () 
+    void Start () 
     {
         // Receiverから起動しないとエラーになります
         m_receiver = new OSCReceiver();
         m_receiver.Init ("TestServer", 8890);
         m_receiver.onListenToOSCMessage += OnListenToOSCMessage;
         receiverIpTxt.text = "IP : " + Network.player.ipAddress;
-	}
+    }
 
     void OnListenToOSCMessage (UnityOSC.OSCPacket obj)
     {
