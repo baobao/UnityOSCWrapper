@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Net;
+using UnityEngine.Networking;
 using UnityOSC;
 
 namespace info.shibuya24.osc
 {
     public class OSCWrapper
     {
-        public const string VERSION = "0.0.1";
+        public const string VERSION = "0.0.2";
     }
     
     /// <summary>
@@ -25,7 +26,7 @@ namespace info.shibuya24.osc
             m_clientId = clientId;
             if (ip == null) 
             {
-                ip = IPAddress.Parse (Network.player.ipAddress);
+                ip = IPAddress.Parse (NetworkManager.singleton.networkAddress);
             }
             OSCHandler.Instance.CreateClient (clientId, ip, port);
         }

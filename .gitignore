@@ -12,3 +12,6 @@ Bin/*
 /*.pidb
 /*.booproj
 *.usertasks
+*.idea
+*/Plugins/Editor/JetBrains/*
+*/Plugins/Editor/JetBrains.meta
