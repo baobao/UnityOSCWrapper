@@ -6,7 +6,7 @@ UnityOSCWrapper is a wrapper for [UnityOSC](https://github.com/jorgegarcia/Unity
 ![](https://cdn-ak.f.st-hatena.com/images/fotolife/e/esakun/20170402/20170402032355.gif)
 
 
-## Reqiored
+## Required
 - Unity2018.2.7f1 higher
 
 ## License
