@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Net;
-using UnityEngine.Networking;
 using UnityOSC;
 
 namespace info.shibuya24.osc
@@ -19,18 +18,22 @@ namespace info.shibuya24.osc
     {
         string m_clientId;
         bool m_isInit;
-        
-        public void Init (string clientId, int port, IPAddress ip = null)
+
+        public void Init (string clientId, int port, string ipAddress)
         {
-            m_isInit = true;
-            m_clientId = clientId;
-            if (ip == null) 
+            try
             {
-                ip = IPAddress.Parse (NetworkManager.singleton.networkAddress);
+                var ip = IPAddress.Parse(ipAddress);
+                m_isInit = true;
+                m_clientId = clientId;
+                OSCHandler.Instance.CreateClient(clientId, ip, port);
             }
-            OSCHandler.Instance.CreateClient (clientId, ip, port);
+            catch (System.Exception e)
+            {
+                Debug.LogError($"Invalid ip address : {ipAddress} / {e.Message}");
+            }
         }
-        
+
         public void Send<T> (string address, T value)
         {
             if (m_isInit == false)
