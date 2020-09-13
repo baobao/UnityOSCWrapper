@@ -36,10 +36,3 @@ public class Sample : MonoBehaviour
         _receiver.UpdateListen();
     }
 }
-
-public class Foo
-{
-    public string a = "a";
-    public string b = "b";
-    public int foo = 100;
-}
