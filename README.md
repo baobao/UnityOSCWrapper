@@ -11,13 +11,9 @@ After Unity 2019.3.4f1, Unity 2020.1a21, that support path query parameter of gi
 
 ![image](https://user-images.githubusercontent.com/144386/87669945-d11d9a00-c7a9-11ea-8a21-aff2cb8117f8.png)
 
-```
-"info.shibuya24.osc": "https://github.com/baobao/UnityOSCWrapper.git?path=Assets/UnityOSCWrapper"
-```
+or add `"info.shibuya24.osc": "https://github.com/baobao/UnityOSCWrapper.git?path=Assets/UnityOSCWrapper"` to `Packages/manifest.json`.
 
-or
-
-import unitypackage.
+or import unitypackage.
 
 
 ## Required
