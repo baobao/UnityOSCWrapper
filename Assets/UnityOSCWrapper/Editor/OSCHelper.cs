@@ -28,7 +28,7 @@ using System.Collections.Generic;
 /// <summary>
 /// Helper to monitor incoming at outgoing OSC messages from the Unity Editor.
 /// You should have this script placed at the /Editor folder.
-/// Show the panel helper by selecting "Window->OSC Helper" from the Unity menu.
+/// Show the panel helper by selecting "Tools-> OSCWrapper -> OSC Helper" from the Unity menu.
 /// </summary>
 public class OSCHelper : EditorWindow
 {
@@ -45,7 +45,7 @@ public class OSCHelper : EditorWindow
 	/// <summary>
 	/// Initializes the OSC Helper and creates an entry in the Unity menu.
 	/// </summary>
-	[MenuItem("Window/OSC Helper")]
+	[MenuItem("Tools/OSCWrapper/OSC Helper")]
 	static void Init ()
 	{
 		OSCHelper window = (OSCHelper)EditorWindow.GetWindow (typeof(OSCHelper));
