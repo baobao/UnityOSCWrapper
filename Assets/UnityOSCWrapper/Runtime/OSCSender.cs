@@ -54,7 +54,7 @@ namespace info.shibuya24.osc
         /// Send Message
         /// value is int, long, float, double, string byte[]
         /// </summary>
-        public void Send<T>(string key, T value)
+        public void Send<T>(string address, T value)
         {
             if (IsInit == false)
             {
@@ -62,7 +62,7 @@ namespace info.shibuya24.osc
                 return;
             }
 
-            OSCHandler.Instance.SendMessageToClient(ClientId, key, value);
+            OSCHandler.Instance.SendMessageToClient(ClientId, address, value);
         }
     }
 }
