@@ -35,7 +35,7 @@ namespace info.shibuya24.osc
             return result;
         }
 
-        private void Init (string clientId, int port, string receiverIPAddressString)
+        private void Init(string clientId, int port, string receiverIPAddressString)
         {
             try
             {
@@ -54,14 +54,15 @@ namespace info.shibuya24.osc
         /// Send Message
         /// value is int, long, float, double, string byte[]
         /// </summary>
-        public void Send<T> (string key, T value)
+        public void Send<T>(string key, T value)
         {
             if (IsInit == false)
             {
                 Debug.LogError("First we need to call the Init function");
                 return;
             }
-            OSCHandler.Instance.SendMessageToClient (ClientId, key, value);
+
+            OSCHandler.Instance.SendMessageToClient(ClientId, key, value);
         }
     }
 }
