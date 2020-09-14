@@ -1,0 +1,16 @@
+{
+    "name": "info.shibuya24.osc",
+    "displayName": "UnityOSCWrapper",
+    "version": "0.0.3",
+    "unity": "2018.4",
+    "description": "UnityOSCWrapper is a wrapper for UnityOSC.",
+    "keywords": ["Unity", "C#", "OSC"],
+    "license": "MIT",
+    "category": "Unity",
+    "dependencies": {},
+    "samples": [{
+        "displayName": "Example",
+        "description": "Example",
+        "path": "Samples~/Example"
+    }]
+}

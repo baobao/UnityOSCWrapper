@@ -1,0 +1,16 @@
+{
+    "name": "UnityOSCWrapper.Editor",
+    "references": [
+        "UnityOSCWrapper.Runtime"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": []
+}
